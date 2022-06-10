@@ -2,10 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Puzzle</title>
+    <style>
+        img {
+            width: 600px;
+            height: 120px;
+        }
+    </style>
 </head>
 <body>
-
+<img data-id="monkey" src="image/monkey1.jpg" onclick="changeImage1()" id="image1"><br>
+<img src="image/panda2.jpg" data-id="panda" id="image2" onclick="changeImage2()"><br>
+<img src="image/cat3.jpg" data-id="cat" id="image3" onclick="changeImage3()"><br>
+<img src="image/dog4.jpg" data-id="dog" id="image4" onclick="changeImage4()"><br>
+<img src="image/chicken5.jpg" data-id="chicken" id="image5" onclick="changeImage5()">
 <script src="puzzlejs.js"></script>
 </body>
 </html>
