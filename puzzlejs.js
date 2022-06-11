@@ -164,21 +164,19 @@ function checkWin() {
     let nameDataID3 = document.getElementById('image3').getAttribute('data-id')
     let nameDataID4 = document.getElementById('image4').getAttribute('data-id')
     let nameDataID5 = document.getElementById('image5').getAttribute('data-id')
-   //let nameDataID = [nameDataID1, nameDataID2, nameDataID3, nameDataID4, nameDataID5];
-    if(nameDataID1){
-
-            document.getElementById('image1').style.border = '2px solid red';
-            document.getElementById('image2').style.border = '2px solid red';
-            document.getElementById('image3').style.border = '2px solid red';
-            document.getElementById('image4').style.border = '2px solid red';
-            document.getElementById('image4').style.border = '2px solid red';
-        }
-           else{
-            document.getElementById('image1').style.border = '';
-            document.getElementById('image2').style.border = '';
-            document.getElementById('image3').style.border = '';
-            document.getElementById('image4').style.border = '';
-            document.getElementById('image5').style.border = '';
+    //let nameDataID = [nameDataID1, nameDataID2, nameDataID3, nameDataID4, nameDataID5];
+    if (nameDataID1 === nameDataID2 && nameDataID2 === nameDataID3 && nameDataID3 === nameDataID4 && nameDataID4 === nameDataID5) {
+        document.getElementById('image1').style.border = '2px solid red';
+        document.getElementById('image2').style.border = '2px solid red';
+        document.getElementById('image3').style.border = '2px solid red';
+        document.getElementById('image4').style.border = '2px solid red';
+        document.getElementById('image5').style.border = '2px solid red';
+    } else {
+        document.getElementById('image1').style.border = '';
+        document.getElementById('image2').style.border = '';
+        document.getElementById('image3').style.border = '';
+        document.getElementById('image4').style.border = '';
+        document.getElementById('image5').style.border = '';
 
     }
 
